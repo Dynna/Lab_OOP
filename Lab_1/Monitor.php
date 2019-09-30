@@ -1,10 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: User
- * Date: 9/22/2019
- * Time: 12:02 AM
- */
+
+// Another method for basic level task
 
 class Monitor
 {

@@ -1,10 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: User
- * Date: 9/22/2019
- * Time: 5:55 PM
- */
+
+/* Task: In main program you should be able to create 3 universities
+with some students in it and calculate the average media between them
+and print the result in console. */
 
 class University
 {

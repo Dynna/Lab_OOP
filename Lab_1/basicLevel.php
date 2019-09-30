@@ -1,5 +1,7 @@
 <?php
 
+// Task: Create a program where you can manipulate a monitor object which has color, dimensions and resolution
+
 function compareMonitors($first_monitor, $second_monitor) {
     if ($first_monitor != $second_monitor) {
         return "The monitors are not the same";

@@ -1,10 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: User
- * Date: 9/22/2019
- * Time: 5:44 PM
- */
+
+// Another method for advanced level task that can be done with University too
 
 class Student
 {
