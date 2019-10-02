@@ -35,3 +35,5 @@ $third_student->math_mark = 10;
 $third_student->physics_mark = 8;
 $third_student->oop_mark = 9;
 $third_student->db_mark = 8;
+
+echo "The name of the second student is: " . $second_student->name;
