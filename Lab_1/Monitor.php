@@ -1,7 +1,5 @@
 <?php
 
-// Another method for basic level task
-
 class Monitor
 {
     public $color;

@@ -1,7 +1,5 @@
 <?php
 
-// Another method for advanced level task that can be done with University too
-
 class Student
 {
     public $name;

@@ -1,9 +1,5 @@
 <?php
 
-/* Task: In main program you should be able to create 3 universities
-with some students in it and calculate the average media between them
-and print the result in console. */
-
 class University
 {
     public $student1_mark;
