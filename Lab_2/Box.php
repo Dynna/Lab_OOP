@@ -25,6 +25,7 @@ class Box {
         $this->height = 1;
         $this->width = 1;
         $this->length = 1;
+
         echo('__construct with 0 params called: '.$this->height.','.$this->width.','.$this->length.PHP_EOL);
     }
 
@@ -56,14 +57,12 @@ class Box {
     }
 }
 
-$first_object = new Box();
+$first_box = new Box();
 echo "<br>";
-$second_object = new Box(7);
+$second_box = new Box(7);
 echo "<br>";
-$third_object = new Box(2, 3, 4);
+$third_box = new Box(7, 4, 5);
 echo "<br>";
-$fourth_object = new Box(7, 4, 5);
+echo "Total surface area of the box is: " .$third_box->surfaceArea(7, 4, 5);
 echo "<br>";
-echo "Total surface area of the box is: " .$fourth_object->surfaceArea(7, 4, 5);
-echo "<br>";
-echo "Volume of the box is: " .$fourth_object->volumeCalculation(7, 4, 5);
+echo "Volume of the box is: " .$third_box->volumeCalculation(7, 4, 5);
