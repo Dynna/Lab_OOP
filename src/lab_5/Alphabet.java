@@ -1,16 +1,26 @@
 package lab_5;
 
 class A {
-    public String a = "a";
+    protected String a;
+    protected X x;
+
+    public A(String a, X x) {
+        this.a = a;
+        this.x = x;
+    }
 
     @Override
     public String toString() {
-        return a;
+        return a + " " + x.x;
     }
 }
 
 class B extends A {
-    public String b = "b";
+    protected String b = "b";
+
+    public B(X x) {
+        super("a", x);
+    }
 
     @Override
     public String toString() {
@@ -19,7 +29,11 @@ class B extends A {
 }
 
 class C extends B {
-    public String c = "c";
+    protected String c = "c";
+
+    public C(X x) {
+        super(x);
+    }
 
     @Override
     public String toString() {
@@ -28,7 +42,11 @@ class C extends B {
 }
 
 class D extends C {
-    public String d = "d";
+    protected String d = "d";
+
+    public D(X x) {
+        super(x);
+    }
 
     @Override
     public String toString() {
@@ -37,7 +55,11 @@ class D extends C {
 }
 
 class E extends D {
-    public String e = "e";
+    protected String e = "e";
+
+    public E(X x) {
+        super(x);
+    }
 
     @Override
     public String toString() {
@@ -46,7 +68,11 @@ class E extends D {
 }
 
 class F extends E {
-    public String f = "f";
+    protected String f = "f";
+
+    public F(X x) {
+        super(x);
+    }
 
     @Override
     public String toString() {
@@ -55,7 +81,11 @@ class F extends E {
 }
 
 class G extends  F {
-    public String g = "g";
+    protected String g = "g";
+
+    public G(X x) {
+        super(x);
+    }
 
     @Override
     public String toString() {
@@ -64,7 +94,11 @@ class G extends  F {
 }
 
 class H extends G {
-    public String h = "h";
+    protected String h = "h";
+
+    public H(X x) {
+        super(x);
+    }
 
     @Override
     public String toString() {
@@ -73,7 +107,11 @@ class H extends G {
 }
 
 class I extends H {
-    public String i = "i";
+    protected String i = "i";
+
+    public I(X x) {
+        super(x);
+    }
 
     @Override
     public String toString() {
@@ -82,14 +120,30 @@ class I extends H {
 }
 
 class J extends I {
-    public String j = "j";
+    protected String j = "j";
+
+    public J(X x) {
+        super(x);
+    }
 
     @Override
     public String toString() {
-        return j;
+        return x + " " + j + " " + a + " " + b + " " + c + " " + e + " " + f + " " + g + " " + h + " " + i;
     }
 }
 
+class X {
+    String x;
+
+    X(String x) {
+        this.x = x;
+    }
+
+    @Override
+    public String toString() {
+        return x;
+    }
+}
 
 
 
