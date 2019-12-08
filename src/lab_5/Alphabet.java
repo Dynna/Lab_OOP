@@ -2,7 +2,7 @@ package lab_5;
 
 class A {
     protected String a;
-    protected X x;
+    protected X x = new X("xxx");
 
     public A(String a, X x) {
         this.a = a;
@@ -43,6 +43,7 @@ class C extends B {
 
 class D extends C {
     protected String d = "d";
+    protected X x = new X("ddd");
 
     public D(X x) {
         super(x);
@@ -95,6 +96,11 @@ class G extends  F {
 
 class H extends G {
     protected String h = "h";
+    private X x = new X("hhh");
+
+    public X getX() {
+        return x;
+    }
 
     public H(X x) {
         super(x);
@@ -128,7 +134,7 @@ class J extends I {
 
     @Override
     public String toString() {
-        return x + " " + j + " " + a + " " + b + " " + c + " " + e + " " + f + " " + g + " " + h + " " + i;
+        return getX() + " " + j + " " + a + " " + b + " " + c + " " + e + " " + f + " " + g + " " + h + " " + i;
     }
 }
 
