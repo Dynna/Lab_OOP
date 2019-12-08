@@ -1,87 +1,95 @@
 package lab_5;
 
 class A {
-    public String a;
+    public String a = "a";
 
-    A(String state){
-        a = state;
-    }
-
-    static String get_state(String a) {
+    @Override
+    public String toString() {
         return a;
     }
 }
 
 class B extends A {
-    public static String b;
+    public String b = "b";
 
-    B(String state) {
-        super(state);
+    @Override
+    public String toString() {
+        return b;
     }
 }
 
 class C extends B {
-    public static String c;
+    public String c = "c";
 
-    C(String state) {
-        super(state);
+    @Override
+    public String toString() {
+        return c;
     }
 }
 
 class D extends C {
-    public static String d;
+    public String d = "d";
 
-    D(String state) {
-        super(state);
+    @Override
+    public String toString() {
+        return d;
     }
 }
 
 class E extends D {
-    public static String e;
+    public String e = "e";
 
-    E(String state) {
-        super(state);
+    @Override
+    public String toString() {
+        return e;
     }
 }
 
 class F extends E {
-    public static String f;
+    public String f = "f";
 
-    F(String state) {
-        super(state);
+    @Override
+    public String toString() {
+        return f;
     }
 }
 
 class G extends  F {
-    public static String g;
+    public String g = "g";
 
-    G(String state) {
-        super(state);
+    @Override
+    public String toString() {
+        return g;
     }
 }
 
 class H extends G {
-    public static String h;
+    public String h = "h";
 
-    H(String state) {
-        super(state);
+    @Override
+    public String toString() {
+        return h;
     }
 }
 
 class I extends H {
-    public static String i;
+    public String i = "i";
 
-    I(String state) {
-        super(state);
+    @Override
+    public String toString() {
+        return i;
     }
 }
 
 class J extends I {
-    public static String j;
+    public String j = "j";
 
-    J(String state) {
-        super(state);
+    @Override
+    public String toString() {
+        return j;
     }
 }
+
+
 
 
